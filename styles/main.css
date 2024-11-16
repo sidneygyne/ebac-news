@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Ubuntu, sans-serif;
+    background-color: aliceblue;
 }
 
 .container {
@@ -15,6 +16,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 header {
@@ -98,4 +100,104 @@ aside .noticia {
     grid-template-columns: 32.6% 32.6% 32.6%;
     column-gap: 1%;
     row-gap: 5%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    header div.container {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    .destaque {
+        margin-bottom: 36px;
+    }
+    
+    .destaque .noticia a {
+        display: block;
+        font-size: 1.5em;
+    }
+    
+    .destaque .noticia img {
+        margin-right: 0;
+    } 
+    
+    .noticias {
+        display: block;
+    
+    }
+
+    .noticias .noticia {
+        margin-bottom: 32px;
+    }
+
+    aside {
+        padding-left: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+    .menu > li {
+        clear: both;
+    }
+    
+    
+    .submenu {
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+        }
+    
+    
+    .submenu li {
+        display: block;
+        padding: 8px;
+    }
+    
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu bottom {
+        padding: 8px;
+    }
+}
+
+@media screen and  (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .noticias {
+        grid-template-columns: 49% 49%;
+    }
+}
+
+@media screen and  (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
 }
