@@ -66,8 +66,21 @@ header {
     grid-template-columns: 70% 30%;
 }
 
+img {
+    width: 320px;
+    height: 320px;
+}
+
 .noticia img {
     max-width: 100%;
+}
+
+.noticias img {
+    height: 230px;
+}
+
+.novidades img {
+    height: 280px;
 }
 
 .destaque {
@@ -76,7 +89,7 @@ header {
 
 .destaque .noticia a {
     display: flex;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .destaque .noticia img {
